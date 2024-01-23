@@ -8,8 +8,8 @@ const blogRoutes = require('./routes/blogRoutes')
 mongoose
   .connect(dbURL)
   .then(() => {
-    app.listen(3000, () => {
-      console.log("listening to port 3000");
+    app.listen(10000, () => {
+      console.log("listening to port 10000");
     });
   })
   .catch((err) => console.error(`Could not connect to the database: ${err}`));
