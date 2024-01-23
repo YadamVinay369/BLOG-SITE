@@ -66,8 +66,8 @@ h3{
 }
 
 .create-blog form{
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 80vw;
+    margin: 0 10vw;
 }
 
 .create-blog input,
@@ -180,5 +180,32 @@ textarea{
 @keyframes type{
 	  from{box-shadow: inset -3px 0px 0px #888;}
 	  to{box-shadow: inset -3px 0px 0px transparent;}
+}
+
+@media (max-width:600px) {
+    nav{
+        flex-direction: column;
+    }
+
+    nav .site-title{
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .create-blog form{
+        max-width: 80vw;
+        margin: 0 10vw;
+    }
+    
+    .create-blog input,
+    .create-blog textarea{
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 8px;
+    }
+    
+
+       
 }
 
