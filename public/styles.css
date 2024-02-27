@@ -3,17 +3,28 @@ body{
     margin: 20px auto;
     padding: 0 20px;
     font-family: "Noto Serif",serif;
+    background-color: black;
+}
+
+.site-title h1{
+    color:#66CCFF;
 }
 
 #main .fof h1{
-    color: #888;
+    color: #b1b0b0;
 }
 
 p, h1, h2, h3, a, ul{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #222;
+}
+p{
+    color: #b1b0b0   
+}
+
+h1, h2, h3, a, ul{
+    color: #fff;
 }
 
 nav{
@@ -34,6 +45,8 @@ nav ul{
 nav li{
     list-style-type: none;
     margin-left: 20px;
+    transition: 0.2ms;
+    transition-behavior:  smooth;
 }
 
 nav h1{
@@ -43,6 +56,11 @@ nav h1{
 nav p,nav a{
     color: #777;
     font-weight: 300;
+    
+}
+
+nav li:hover{
+    transform: scale(1.1);
 }
 
 footer{
@@ -81,6 +99,7 @@ h3{
 .create-blog label{
     display: block;
     margin-top: 24px;
+    color: #fff;
 }
 
 textarea{
@@ -89,8 +108,8 @@ textarea{
 
 .create-blog button{
     margin-top: 20px;
-    background-color: crimson;
-    color: white;
+    background-color: #66CCFF;
+    color: black;
     padding: 6px;
     border: 0;
     font-size: 1.2em;
@@ -101,11 +120,11 @@ textarea{
     display: block;
     margin: 40px 0;
     padding-left: 30px;
-    border-left: 6px solid crimson;
+    border-left: 6px solid #66CCFF;
 }
 
 .blogs a:hover h3{
-    color: crimson;
+    color: #66CCFF;
 }
 
 .details{
@@ -134,7 +153,7 @@ textarea{
 }
 
 .about h2{
-    color: crimson;
+    color: #66CCFF;
     margin-bottom: none;
     font-size: 20px;
 }
