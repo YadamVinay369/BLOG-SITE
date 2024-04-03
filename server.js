@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
-const dbPassword = encodeURIComponent("Vinay@2002");
+const dbPassword = encodeURIComponent("Write your mongoDB password here");
 const dbURL = `mongodb+srv://vinay:${dbPassword}@blog-site.spvflgy.mongodb.net/BLOG-SITE?retryWrites=true&w=majority`;
 const blogRoutes = require('./routes/blogRoutes')
 
